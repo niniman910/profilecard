@@ -1,0 +1,29 @@
+---
+import  Profilecard  from '../components/ProfileCard.astro';
+import Layout from '../layouts/Layout.astro';
+
+const profil = {
+	nama:"mujair",
+	kelas:"XI RPL",
+	bio:"belajar astro",
+	foto:'public/valen.png',
+	keahlian:["web design","full stack developer"],
+	github:"https://github.com/niniman910",
+	email:"valentinobarus199@gmail.com"
+
+}
+---
+
+
+<Layout judul={`profil ${profil.nama}`}>
+    <Profilecard 
+	nama={profil.nama} 
+	kelas={profil.kelas} 
+	bio={profil.bio}
+	foto={profil.foto}
+	keahlian={profil.keahlian}
+	github={profil.github}
+	email={profil.email}
+/>
+</Layout>
+
